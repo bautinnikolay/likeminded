@@ -1,0 +1,20 @@
+{
+  "name": "likeminded",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "mocha --timeout=5000 server/**/*.tests.js",
+    "client": "cd client && npm start",
+    "start": "node server/server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.1.0-beta4",
+    "mongoose": "^5.4.22"
+  }
+}
