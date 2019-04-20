@@ -16,7 +16,13 @@ app.use(sess({
   cookie: { expires: new Date(Date.now() + 9000000000) }
 }))
 
-app.listen(80, () => {
+app.set('view engine', 'pug')
+
+app.get('/', (req, res) => {
+  res.render('index')
+})
+
+app.listen(3000, () => {
     console.log("Server started at port 80")
 })
 
